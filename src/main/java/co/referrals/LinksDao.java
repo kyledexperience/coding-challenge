@@ -16,7 +16,7 @@ public class LinksDao {
 	private EntityManager em;
 
 	public List<Link> findAll() {
-		return em.createQuery("FROM Link order by clicks", Link.class).getResultList();
+		return em.createQuery("FROM Link order by clicks DESC", Link.class).getResultList();
 	}
 
 	public void create(Link link) {

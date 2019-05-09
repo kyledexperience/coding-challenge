@@ -3,3 +3,36 @@
 h1 {
 	color: firebrick;
 }
+
+.body{
+	
+	margin-left: 25%;
+	font-family: Georgia, sans-serif;
+	font-size: 20px;
+	
+}
+
+.table ,td, th{
+	
+	border-collapse: collapse;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	width: 50%;
+	margin-top: 15px;
+	padding: 5px;
+}
+
+.table{
+	border: 2px solid black;
+	
+}
+
+th{
+	background-color: #b7b8be;
+	border-top: 2px solid black;
+	text-align: center;
+}
+
+tr:nth-child(even){
+	background-color: #cdd3ff;
+}

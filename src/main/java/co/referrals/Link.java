@@ -44,9 +44,8 @@ public class Link {
 		this.clicks = clicks;
 	}
 
-	public Link(Long id, String title, Integer clicks) {
+	public Link(String title, Integer clicks) {
 		super();
-		this.id = id;
 		this.title = title;
 		this.clicks = clicks;
 	}
