@@ -24,7 +24,7 @@
 
 	<table>
 		<tr>
-			<th>Link Title</th>
+			<th>Link title</th>
 			<th>Clicks</th>
 			<th>Edit</th>
 			<th>Delete</th>
