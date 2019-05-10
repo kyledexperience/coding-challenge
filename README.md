@@ -1,3 +1,13 @@
+##### MY SOLUTION
+
+Problem: Create database of web sites to grow my referral network.
+Solution: Using SpringMVC and MySQL I built a web app that is easy to navigate and utilize.
+
+Focusing on back-end while still creating a usable environment.
+Did not deploy to AWS. But would love to implement that in the near future.
+
+
+
 #### README
 
 In your repo, please include the following items in your README:
