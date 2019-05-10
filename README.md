@@ -7,6 +7,7 @@ Focusing on back-end while still creating a usable environment.
 Did not deploy to AWS. But would love to implement that in the near future.
 
 FINAL PROJECT: https://github.com/kyledexperience/AlongTheWayApp
+
 AWS version: http://alongtheway.us-east-2.elasticbeanstalk.com/ 
 
 #### README
