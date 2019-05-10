@@ -14,8 +14,8 @@
 		<h1>Grow the web with referrals!</h1>
 
 		<form method="post">
-			<span>Add a link: <input type="text" name="link" />
-				<button type="submit">Add</button>
+			<span>Add a link: &nbsp;<input type="text" name="link" />
+				&nbsp;<button type="submit">Add</button>
 			</span>
 		</form>
 
@@ -33,7 +33,7 @@
 
 			<c:forEach var="w" items="${list}">
 				<tr>
-					<td align="left">${w.title}</td>
+					<td align="left"><a href="/landing/${w.title}">${w.title}</a></td>
 					<td align="right">${w.clicks}</td>
 					<td><a href="/edit/${w.id}">Edit</a></td>
 					<td><a href="/delete/${w.id}">Delete</a></td>

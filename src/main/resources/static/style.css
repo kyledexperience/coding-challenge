@@ -1,19 +1,16 @@
 @charset "UTF-8";
 
 h1 {
-	color: firebrick;
+	font-size: 35px;
 }
 
-.body{
-	
+.body {
 	margin-left: 25%;
 	font-family: Georgia, sans-serif;
 	font-size: 20px;
-	
 }
 
-.table ,td, th{
-	
+.table, td, th {
 	border-collapse: collapse;
 	border-left: 2px solid black;
 	border-right: 2px solid black;
@@ -22,17 +19,55 @@ h1 {
 	padding: 5px;
 }
 
-.table{
+.table {
 	border: 2px solid black;
-	
 }
 
-th{
+th {
 	background-color: #b7b8be;
 	border-top: 2px solid black;
 	text-align: center;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
 	background-color: #cdd3ff;
+}
+
+input {
+	height: 30px;
+}
+
+button {
+	font-size: 18px;
+	padding: 5px;
+}
+
+img {
+	width: 50%;
+}
+
+p {
+	font-size: 30px;
+	text-align: center;
+	margin-right: 50%;
+}
+
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:active {
+	text-decoration: none;
+	color: #000000;
 }

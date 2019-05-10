@@ -21,7 +21,10 @@ public class LinksDao {
 
 	public Link findById(Long id) {
 		return em.find(Link.class, id);
+	}
 
+	public Link findbyTitle(String title) {
+		return (Link) em.createQuery("FROM Link WHERE title = :title1").setParameter("title1", title).getSingleResult();
 	}
 
 	public void create(Link link) {
@@ -34,6 +37,11 @@ public class LinksDao {
 
 	public void update(Link link) {
 		em.merge(link);
+	}
+
+	public void updateClick(Long id, Integer clicks) {
+		findById(id).setClicks(clicks + 1);
+		em.merge(findById(id));
 	}
 
 }

@@ -54,12 +54,24 @@ public class RefController {
 
 	@PostMapping("/edit/{id}")
 	public ModelAndView editor(@PathVariable(value = "id", required = false) Long id,
-			@RequestParam("title") String title) {
+			@RequestParam(name = "title", required = false) String title) {
 
 		Link link = dao.findById(id);
 		link.setTitle(title);
 		dao.update(link);
 		return new ModelAndView("redirect:/");
+
+	}
+
+	@RequestMapping("/landing/{title}")
+	public ModelAndView link(@PathVariable(value = "title", required = false) String title) {
+
+		ModelAndView mav = new ModelAndView("landing");
+		Link link = dao.findbyTitle(title);
+		dao.updateClick(link.getId(), link.getClicks());
+
+		mav.addObject("title", title);
+		return mav;
 
 	}
 
