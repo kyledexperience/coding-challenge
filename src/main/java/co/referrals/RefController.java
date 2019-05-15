@@ -67,6 +67,7 @@ public class RefController {
 	public ModelAndView link(@PathVariable(value = "title", required = false) String title) {
 
 		ModelAndView mav = new ModelAndView("landing");
+
 		Link link = dao.findbyTitle(title);
 		dao.updateClick(link.getId(), link.getClicks());
 

@@ -5,12 +5,12 @@ h1 {
 }
 
 .body {
-	margin-left: 25%;
+	margin-left: 15%;
 	font-family: Georgia, sans-serif;
 	font-size: 20px;
 }
 
-.table, td, th {
+table .table, td, th {
 	border-collapse: collapse;
 	border-left: 2px solid black;
 	border-right: 2px solid black;
@@ -21,6 +21,8 @@ h1 {
 
 .table {
 	border: 2px solid black;
+	margin-right: 50%;
+	margin-top: 15px;
 }
 
 th {
