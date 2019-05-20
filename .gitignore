@@ -5,3 +5,5 @@
 .classpath
 .project
 *.class
+
+src/main/resources/config/application.properties
