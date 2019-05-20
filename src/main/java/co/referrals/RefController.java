@@ -63,15 +63,15 @@ public class RefController {
 
 	}
 
-	@RequestMapping("/landing/{title}")
-	public ModelAndView link(@PathVariable(value = "title", required = false) String title) {
+	@RequestMapping("/landing/{id}")
+	public ModelAndView link(@PathVariable("id") Long id) {
 
 		ModelAndView mav = new ModelAndView("landing");
 
-		Link link = dao.findbyTitle(title);
-		dao.updateClick(link.getId(), link.getClicks());
+		Link link = dao.findById(id);
+		dao.updateClick(id, link.getClicks());
 
-		mav.addObject("title", title);
+		mav.addObject("link", link);
 		return mav;
 
 	}

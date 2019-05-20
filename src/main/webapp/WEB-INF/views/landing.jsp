@@ -14,7 +14,7 @@
 
 <div class="body">
 
-	<c:set var="string1" value="${title}" />
+	<c:set var="string1" value="${link.title}" />
 	<c:set var="string2" value="${fn:toUpperCase(string1.charAt(0))}" />
 
 	<p>${string2}${string1.substring(1)} are awesome!</p>
